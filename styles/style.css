@@ -1,19 +1,17 @@
 /* место для вашего кода */
 
 .header {
+  min-width: 1000px;
   display: grid;
-  width: 1340px;
+  grid-template-columns: repeat(3, 1fr);
   margin: 92px 51px 92px 50px;
-  grid-template-columns: 597px 503px 240px;
-  padding: 0;
 }
 
 .header__menu {
   margin: 0;
   padding-left: 2px;
-  display: flex;
-  align-self: center;
-  min-width: 388px;
+  display: grid;
+  align-items: center;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -50,23 +48,24 @@
 }
 
 .header__logo {
-  display: flex;
-  width: 148px;
-  height: 105px;
+  justify-self: center;
+  justify-content: center;
+  display: grid;
+  width: 145px;
   margin: 0;
   padding: 0;
 }
 
 .header__address {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  display: grid;
+  justify-self: end;
+  justify-content: end;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 24.3px;
   font-weight: 400;
   font-style: normal;
   color: #000000;
-  min-width: 240px;
   text-underline-offset: 4px;
 }
 
@@ -78,8 +77,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
   z-index: 1;
+  min-width: 1100px;
 }
 
 .overlay {
@@ -95,6 +94,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: center;
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
@@ -114,23 +114,20 @@
 
 .aligned-text {
   display: flex;
-  margin: 172px 50px 20px 50px;
-  padding: 0;
-  width: 1340px;
+  margin-left: 50px;
+  margin-top: 170px;
 }
 
 .aligned-text_center {
   display: flex;
-  margin: 0 50px 20px 110px;
-  padding: 12px 392px 2px 392px;
-  width: 1280px;
+  margin-left: 80px;
+  margin-top: 300px;
 }
 
 .aligned-text_right {
   display: flex;
-  justify-content: flex-end;
-  margin: 0 20px 130px 80px;
-  width: 1340px;
+  margin-top: 420px;
+  margin-left: 45px;
 }
 
 .cover__description {
@@ -151,7 +148,7 @@
   word-spacing: 17px;
   margin-left: 422px;
   margin-bottom: 62px;
-  margin-top: auto;
+  margin-top: 148px;
   margin-right: 78px;
 }
 
@@ -171,15 +168,14 @@
   text-transform: uppercase;
   color: #ffffff;
   border: 1px white solid;
-  padding: 12px 32px 12px 32px;
-  margin: 0 0 50px 0;
   background-color: transparent;
   cursor: pointer;
   z-index: 3;
+  padding: 12px 32px 12px 32px;
+  margin: 135px 0 50px 0;
 }
 
 .lots {
-  width: 1340px;
   margin: 0 50px auto 50px;
   padding: 0;
 }
@@ -196,16 +192,16 @@
 
 .lots__card-list {
   display: flex;
-  flex-grow: 1;
+  justify-content: center;
   gap: 25px;
-  margin-top: 27px;
-  margin-bottom: 30px;
+  margin-top: 29px;
+  margin-bottom: 35px;
   list-style: none;
 }
 
 .card {
   position: relative;
-  width: 430px;
+  max-width: 430px;
   min-height: 450px;
   display: flex;
 }
@@ -281,10 +277,9 @@
 }
 
 .about {
-  display: grid;
   margin: 181px 50px 183px 50px;
-  width: 1340px;
-  grid-template-columns: 455px 885px;
+  grid-template-columns: 455px auto;
+  display: grid;
 }
 
 .about__logo {
@@ -345,10 +340,9 @@
 
 .footer {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 50px 90px 50px;
   padding: 0;
-  width: 1340px;
-  grid-template-columns: 240px 505px 596px;
 }
 
 .footer__address {
@@ -375,7 +369,8 @@
   line-height: 21.13px;
   font-weight: 400;
   text-align: center;
-  justify-content: end;
+  justify-self: center;
+  justify-content: center;
 }
 
 .footer__menu-list-item {
@@ -392,7 +387,7 @@
   flex-wrap: nowrap;
   right: 0;
   min-width: 240px;
-  height: 48px;
+  min-height: 48px;
   justify-content: end;
 }
 
