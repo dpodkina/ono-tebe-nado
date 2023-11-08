@@ -135,10 +135,10 @@
 
 .aligned-text_right {
   display: block;
-  margin-left: 50px;
+  min-width: 93%;
+  text-align: end;
   margin-right: 50px;
-  padding: 0 925px;
-  min-width: 1000px;
+  margin-left: 80px;
 }
 
 .cover__description {
